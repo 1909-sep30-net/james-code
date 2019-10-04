@@ -5,8 +5,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
-    <ItemGroup>
-    <ProjectReference Include="..\ShapesApp.Library\ShapesApp.Library.csproj" />
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
 </Project>
