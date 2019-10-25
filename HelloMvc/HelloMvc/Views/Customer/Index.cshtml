@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@*comment *@
+@* each instance of the view can be passed one object containing
+    all the data it wants to display. that is called the model of the view
+    and it's accessible here as "Model"*@
+
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <tbody>
+            @foreach(Customer customer in Model)
+            {
+                <tr>
+                    <td>@customer.Id</td>
+                    <td>@customer.Name</td>
+                </tr>
+            }
+        </tbody>
+    </thead>
+</table>
